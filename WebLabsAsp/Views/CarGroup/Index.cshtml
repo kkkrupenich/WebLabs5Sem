@@ -1,0 +1,47 @@
+@model IEnumerable<WebLabsAsp.Entities.CarGroup>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="scaffold">
+    <h1>Index</h1>
+    
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.GroupName)
+            </th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GroupName)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.CarGroupId">Edit</a> <br/>
+                    <a asp-action="Delete" asp-route-id="@item.CarGroupId">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    <style>
+        a {
+            font-size: 16px;
+            text-decoration: none;
+            color: #55ACEE;
+        }
+        a:hover {
+            color: #007bd7;
+        }
+    </style>
+</div>

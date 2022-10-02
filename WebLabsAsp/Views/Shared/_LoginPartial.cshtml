@@ -1,0 +1,29 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using WebLabsAsp.Entities
+@inject SignInManager<ApplicationUser> SignInManager
+
+<ul class="navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <partial name="_UserPartial"/>
+    }
+    else
+    {
+        <div class="row logreg" style="width: 150px">
+                <a style="width: 70px" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                <a style="width: 80px" asp-area="Identity" asp-page="/Account/Register">Register</a>
+                <style>
+                    .logreg > a {
+                        text-decoration: none;
+                        color: #eee;
+                        transition: 0.3s ease;
+                    }
+                    .logreg > a:hover {
+                        color: #55ACEE;
+                        transition: 0.3s ease;
+                    }
+                </style>
+            </div>
+    }
+</ul>

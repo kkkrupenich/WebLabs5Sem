@@ -1,0 +1,21 @@
+﻿@using Microsoft.AspNetCore.Identity.EntityFrameworkCore
+<div class="row" style="width: 200px">
+    @await Component.InvokeAsync("Cart")
+    <div class="dropdown">
+        <div class="dropbtn">
+            <img src="@Url.Action("GetAvatar", "Users")" 
+                 onerror="this.onerror=null; this.src='@Url.Content("~/images/avatar.jpg")'" 
+                 width="40" height="40" alt="@User.Identity.Name" class="rounded"/>
+        </div>
+        <div class="dropdown-content">
+            <a style="text-decoration: none; color: white">@User.Identity.Name</a>
+            <div class="dropdown-divider"></div>
+            <a asp-controller="Cart" asp-action="Index" class="but">My goods</a>
+            
+            <form id="form-inline" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <a href="javascript:{}" onclick="document.getElementById('form-inline').submit()">Log out</a>
+            </form>
+
+        </div>
+    </div>
+</div>
