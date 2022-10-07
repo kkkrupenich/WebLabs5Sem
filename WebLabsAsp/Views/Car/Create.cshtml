@@ -1,8 +1,15 @@
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using WebLabsAsp.Controllers
+@using WebLabsAsp.Entities
+@using Microsoft.AspNetCore.Components.Forms
 @model WebLabsAsp.Entities.Car
 
 @{
+    
     ViewData["Title"] = "Create";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var groups = (List<CarGroup>)ViewData["groups"];
+    var input = ViewData["Input"] as CarController.InputModel;
 }
 
 <div class="scaffold">
@@ -31,8 +38,13 @@
                 </div>
                 <div class="form-group">
                     <label asp-for="Image" class="control-label"></label>
-                    <input asp-for="Image" class="form-control" />
-                    <span asp-validation-for="Image" class="text-danger"></span>
+                    <input asp-for="@input.ImageUpload.FormFile" type="file" accept="image/*" class="form-control" />
+                    <span asp-validation-for="@input.ImageUpload.FormFile" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CarGroupId" class="control-label"></label>
+                    <select asp-for="CarGroupId" class="form-control" asp-items='new SelectList(groups, "CarGroupId", "GroupName")'/>
+                    <span asp-validation-for="CarGroupId" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <input type="submit" value="Create" class="btn btn-primary" />
