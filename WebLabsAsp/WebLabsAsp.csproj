@@ -33,4 +33,10 @@
       <Folder Include="wwwroot\cars" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Update="Migrations\20221002191619_Cars.Designer.cs">
+        <DependentUpon>20221002191619_Cars.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
 </Project>

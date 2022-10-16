@@ -14,15 +14,14 @@ public class Car
     
     [Required(ErrorMessage = "{0} is required")]
     public int Price { get; set; }
-    public string Image { get; set; }
+    public string? Image { get; set; }
     
-    public string Group { get; set; }
+    //public string Group { get; set; }
     
     public Guid CarGroupId { get; set; }
     
-    [Required(ErrorMessage = "{0} is required")]
     [Display(Name="Category")]
-    public virtual CarGroup CarGroup { get; set; }
+    public CarGroup CarGroup { get; set; }
 }
 
 public class CarGroup

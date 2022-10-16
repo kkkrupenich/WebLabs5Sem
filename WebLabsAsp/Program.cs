@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WebLabsAsp.Data;
 using WebLabsAsp.Entities;
+using WebLabsAsp.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

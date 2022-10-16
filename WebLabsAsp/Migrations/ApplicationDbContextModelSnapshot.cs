@@ -225,15 +225,14 @@ namespace WebLabsAsp.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<Guid>("CarGroupId")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<Guid>("GroupCarGroupId")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<int>("Price")
@@ -241,7 +240,7 @@ namespace WebLabsAsp.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("GroupCarGroupId");
+                    b.HasIndex("CarGroupId");
 
                     b.ToTable("Cars");
                 });
@@ -327,13 +326,13 @@ namespace WebLabsAsp.Migrations
 
             modelBuilder.Entity("WebLabsAsp.Entities.Car", b =>
                 {
-                    b.HasOne("WebLabsAsp.Entities.CarGroup", "Group")
+                    b.HasOne("WebLabsAsp.Entities.CarGroup", "CarGroup")
                         .WithMany()
-                        .HasForeignKey("GroupCarGroupId")
+                        .HasForeignKey("CarGroupId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Group");
+                    b.Navigation("CarGroup");
                 });
 #pragma warning restore 612, 618
         }

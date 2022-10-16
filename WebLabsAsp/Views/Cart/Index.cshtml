@@ -1,10 +1,41 @@
-﻿@{
-    ViewBag.Title = "Cart";
-    Layout = "_Layout";
+﻿@model IEnumerable<WebLabsAsp.Models.CartItem>
+    
+@{
+    ViewData["Title"] = "Cart";
 }
 
-<main>
-    <section class="home">
-        <h1>Cart</h1>
-    </section>
-</main>
+<div class="scaffold">
+    <h1>Ваша корзина</h1>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                   
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Quantity)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    <label>@item.Car.Brand</label>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td>
+                    <a class="btn btn-outline-danger"
+                       asp-action="delete" asp-controller="Cart"
+                       asp-route-id="@item.Car.Id"
+                       ><i class="fa fa-close"></i></a>
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>
+</div>

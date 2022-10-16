@@ -36,6 +36,12 @@ public class DbInitializer : IDbInitializer
             await _context.SaveChangesAsync();
         }
         
+        // if (!_context.Cars.Any())
+        // {
+        //     _context.Cars.Add(new Car() { Brand = "Dodge", CarGroupId = Guid.Parse("1F7DB356-B3AE-48C5-BB5A-E8CF84782481"), Description = "Challenger", Image = "asd", Price = 100000});
+        //     await _context.SaveChangesAsync();
+        // }
+        
         if (_context.Users.Any())
             return;
 

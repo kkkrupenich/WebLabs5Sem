@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using WebLabsAsp.Data;
@@ -15,11 +16,15 @@ namespace WebLabsAsp.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly IWebHostEnvironment _hostEnvironment;
+        private readonly ILogger<Car> _logger;
 
-        public CarController(ApplicationDbContext context, IWebHostEnvironment hostEnvironment)
+        public CarController(ApplicationDbContext context, 
+            IWebHostEnvironment hostEnvironment,
+            ILogger<Car> logger)
         {
             _context = context;
             _hostEnvironment = hostEnvironment;
+            _logger = logger;
         }
         
         [BindProperty] public InputModel Input { get; set; }
@@ -27,15 +32,13 @@ namespace WebLabsAsp.Controllers
         // GET: Car
         public async Task<IActionResult> Index()
         {
-              return _context.Cars != null ? 
-                          View(await _context.Cars.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Cars'  is null.");
+            return View(await _context.Cars.ToListAsync());
         }
 
         // GET: Car/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
-            if (id == null || _context.Cars == null)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -53,7 +56,7 @@ namespace WebLabsAsp.Controllers
         // GET: Car/Create
         public IActionResult Create()
         {
-            ViewData["groups"] = _context.CarGroups.ToList();
+            ViewData["groups"] = new SelectList(_context.CarGroups.ToList(), "CarGroupId","GroupName");
             return View();
         }
 
@@ -63,31 +66,28 @@ namespace WebLabsAsp.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(
-            [Bind("Id,Brand,Description,Price,Image, CarGroup")] Car car)
+            [Bind("Id,Brand,Description,Price,Image,CarGroupId")]
+            Car car)
         {
+            if (ModelState.GetFieldValidationState("Brand") != ModelValidationState.Valid ||
+                ModelState.GetFieldValidationState("Description") != ModelValidationState.Valid ||
+                ModelState.GetFieldValidationState("Price") != ModelValidationState.Valid) 
+                return View(car);
             
-            if (ModelState.IsValid)
+            if (Input.ImageUpload != null)
             {
-                car.Id = Guid.NewGuid();
-                if (Input.ImageUpload != null)
+                await using (var stream = new FileStream(Path.Combine(_hostEnvironment.WebRootPath, "cars",
+                                 Input.ImageUpload.FormFile.FileName), FileMode.Create))
                 {
-                    using (var stream = new FileStream(Path.Combine(_hostEnvironment.WebRootPath, "cars",
-                               car.Id.ToString("N")), FileMode.Create))
-                    {
-                        await Input.ImageUpload.FormFile.CopyToAsync(stream);
-                    }
-
-                    car.Image = car.Id.ToString("N") + Input.ImageUpload.FormFile.FileName.Split('.')[1];
+                    await Input.ImageUpload.FormFile.CopyToAsync(stream);
                 }
-                
-                car.Group = _context.CarGroups.
-                    FirstOrDefaultAsync(m => m.CarGroupId == car.CarGroupId).Result.GroupName;
 
-                _context.Add(car);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                car.Image = Input.ImageUpload.FormFile.FileName;
             }
-            return View(car);
+            
+            _context.Add(car);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Car/Edit/5
@@ -111,7 +111,7 @@ namespace WebLabsAsp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Brand,Description,Price,Image")] Car car)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Brand,Description,Price,Image,CarGroupId")] Car car)
         {
             if (id != car.Id)
             {
@@ -180,7 +180,7 @@ namespace WebLabsAsp.Controllers
 
         private bool CarExists(Guid id)
         {
-          return (_context.Cars?.Any(e => e.Id == id)).GetValueOrDefault();
+          return _context.Cars.Any(e => e.Id == id);
         }
 
         public class InputModel

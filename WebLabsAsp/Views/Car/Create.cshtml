@@ -1,69 +1,56 @@
-@using Microsoft.AspNetCore.Mvc.TagHelpers
 @using WebLabsAsp.Controllers
-@using WebLabsAsp.Entities
-@using Microsoft.AspNetCore.Components.Forms
-@model WebLabsAsp.Entities.Car
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model Car
 
 @{
-    
     ViewData["Title"] = "Create";
 
-    var groups = (List<CarGroup>)ViewData["groups"];
+    var groups = (SelectList)ViewData["groups"];
     var input = ViewData["Input"] as CarController.InputModel;
 }
 
-<div class="scaffold">
-    <h1>Create</h1>
-    
-    <h4>Car</h4>
-    <hr />
+<br/>
+<div class="col-md-12 text-center">
+    <h1>Создать новое блюдо</h1>
+    <hr/>
     <div class="row">
-        <div class="col-md-4">
-            <form asp-action="Create">
+        <div class="col-lg-6" style="float:none;margin:auto;">
+            <form asp-action="Create" method="post" enctype="multipart/form-data">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group">
                     <label asp-for="Brand" class="control-label"></label>
-                    <input asp-for="Brand" class="form-control" />
+                    <input asp-for="Brand" class="form-control"/>
                     <span asp-validation-for="Brand" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="Description" class="control-label"></label>
-                    <input asp-for="Description" class="form-control" />
+                    <input asp-for="Description" class="form-control"/>
                     <span asp-validation-for="Description" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="Price" class="control-label"></label>
-                    <input asp-for="Price" class="form-control" />
+                    <input asp-for="Price" class="form-control"/>
                     <span asp-validation-for="Price" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Image" class="control-label"></label>
-                    <input asp-for="@input.ImageUpload.FormFile" type="file" accept="image/*" class="form-control" />
+                    <label asp-for="Image"></label>
+                    <input asp-for="@input.ImageUpload.FormFile" type="file" accept="image/*" class="form-control"/>
                     <span asp-validation-for="@input.ImageUpload.FormFile" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="CarGroupId" class="control-label"></label>
-                    <select asp-for="CarGroupId" class="form-control" asp-items='new SelectList(groups, "CarGroupId", "GroupName")'/>
+                    <label asp-for="CarGroupId"></label>
+                    <select asp-for="CarGroupId" class="form-control" asp-items="@groups"></select>
                     <span asp-validation-for="CarGroupId" class="text-danger"></span>
                 </div>
-                <div class="form-group">
-                    <input type="submit" value="Create" class="btn btn-primary" />
+                <div>
+                    <div class="form-group" style="display: inline-block; margin-right:30px">
+                        <input type="submit" value="Создать" class="btn btn-primary"/>
+                    </div>
+                    <div style="display: inline-block;">
+                        <a asp-action="Index">Вернуться назад</a>
+                    </div>
                 </div>
             </form>
         </div>
     </div>
-    
-    <div>
-        <a asp-action="Index">Back to List</a>
-    </div>
-    <style>
-        a {
-            font-size: 16px;
-            text-decoration: none;
-            color: #55ACEE;
-        }
-        a:hover {
-            color: #007bd7;
-        }
-    </style>
 </div>

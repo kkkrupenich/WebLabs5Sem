@@ -3,7 +3,7 @@ using WebLabsAsp.Models;
 
 namespace WebLabsAsp.Components;
 
-public class Menu : ViewComponent
+public class MenuViewComponent : ViewComponent
 {
     private List<MenuItem> _menuItems = new()
     {
