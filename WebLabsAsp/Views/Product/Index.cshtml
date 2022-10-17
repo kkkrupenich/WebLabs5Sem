@@ -6,7 +6,7 @@
 }
 @{
     var categories = ViewData["Groups"] as IEnumerable<CarGroup>;
-    var currentGroup = (Guid) ViewData["CurrentGroup"];
+    var currentGroup = (Guid)ViewData["CurrentGroup"];
 
     var first = categories!.FirstOrDefault(g => g.CarGroupId == currentGroup);
     var currentCategory = currentGroup != Guid.Empty ?
@@ -17,15 +17,17 @@
 <div class="scaffold">
     <div class="row">
         <div class="col-2">
-            <div class="dropdown mt-2">
-                <a class="btn btn-secondary dropdown-toggle"
-                   asp-action="Index" asp-controller="Product"
-                   role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    @currentCategory
-                </a>
+            <div class="dropdown-2 mt-2">
+                <div class="dropbtn-2">
+                    <a class="btn btn-outline-info dropdown-toggle"
+                       asp-action="Index" asp-controller="Product"
+                       role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        @currentCategory
+                    </a>
+                </div>
 
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <div class="dropdown-content-2" aria-labelledby="dropdownMenuLink">
                     <a class="dropdown-item"
                        asp-action="Index"
                        asp-controller="Product">
