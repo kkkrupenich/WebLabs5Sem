@@ -1,10 +1,10 @@
 ﻿$(document).ready(function () {
     $(".page-link").click(function (e) {
         e.preventDefault();
-        var uri = this.attributes["href"].value;
-        $("#list").load(uri);
+        let url = this.attributes["href"].value;
+        $("#carsList").load(url);
         $(".active").removeClass("active disabled");
         $(this).parent().addClass("active");
-        history.pushState(null, null, uri);
+        history.pushState(null, null, url);
     });
 });

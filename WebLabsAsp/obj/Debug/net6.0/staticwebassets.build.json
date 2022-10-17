@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "z03g8u+WbctTeQzvb3PpqajyzRvbOiqKP6kBsrZcovs=",
+  "Hash": "40BjCPQyT2cArIXcRUSDB0BpZS+QgnDs0BWpEbA5lA4=",
   "Source": "WebLabsAsp",
   "BasePath": "_content/WebLabsAsp",
   "Mode": "Default",
@@ -1071,40 +1071,6 @@
       "OriginalItemSpec": "D:\\labs\\sem5\\igi\\WebLabsAsp\\WebLabsAsp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebLabsAsp.bundle.scp.css"
     },
     {
-      "Identity": "D:\\labs\\sem5\\igi\\WebLabsAsp\\WebLabsAsp\\wwwroot\\cars\\dodge.jfif",
-      "SourceId": "WebLabsAsp",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\labs\\sem5\\igi\\WebLabsAsp\\WebLabsAsp\\wwwroot\\",
-      "BasePath": "_content/WebLabsAsp",
-      "RelativePath": "cars/dodge.jfif",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\cars\\dodge.jfif"
-    },
-    {
-      "Identity": "D:\\labs\\sem5\\igi\\WebLabsAsp\\WebLabsAsp\\wwwroot\\cars\\dodge.jpg",
-      "SourceId": "WebLabsAsp",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\labs\\sem5\\igi\\WebLabsAsp\\WebLabsAsp\\wwwroot\\",
-      "BasePath": "_content/WebLabsAsp",
-      "RelativePath": "cars/dodge.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\cars\\dodge.jpg"
-    },
-    {
       "Identity": "D:\\labs\\sem5\\igi\\WebLabsAsp\\WebLabsAsp\\wwwroot\\cars\\hatchback.png",
       "SourceId": "WebLabsAsp",
       "SourceType": "Discovered",
@@ -1290,6 +1256,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\pager.js"
+    },
+    {
+      "Identity": "D:\\labs\\sem5\\igi\\WebLabsAsp\\WebLabsAsp\\wwwroot\\js\\scroll.js",
+      "SourceId": "WebLabsAsp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\labs\\sem5\\igi\\WebLabsAsp\\WebLabsAsp\\wwwroot\\",
+      "BasePath": "_content/WebLabsAsp",
+      "RelativePath": "js/scroll.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\scroll.js"
     },
     {
       "Identity": "D:\\labs\\sem5\\igi\\WebLabsAsp\\WebLabsAsp\\wwwroot\\js\\site.js",

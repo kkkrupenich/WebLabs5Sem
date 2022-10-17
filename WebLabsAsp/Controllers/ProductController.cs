@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebLabsAsp.Data;
 using WebLabsAsp.Entities;
+using WebLabsAsp.Extensions;
 using WebLabsAsp.Models;
 
 namespace WebLabsAsp.Controllers;
@@ -20,19 +21,17 @@ public class ProductController : Controller
 
     // GET
     [Route("Catalog")]
-    [Route("Catalog/Page_{pageNo=1}")]
-    public IActionResult Index(Guid group, int pageNo)
+    [Route("Catalog/Page_{page:int=1}")]
+    public IActionResult Index(Guid? group, int page)
     {
-        var carFiltered = _context.Cars.Where(c => group == Guid.Empty || c.CarGroupId == group);
+        var carFiltered = _context.Cars
+            .Where(d => !group.HasValue || d.CarGroupId == group.Value);
         
         ViewData["Groups"] = _context.CarGroups;
-        var currentGroup = group != Guid.Empty ? group : Guid.Empty;
-        ViewData["CurrentGroup"] = currentGroup;
-
-        var isAjax = Request.Headers["X-Requested-With"] == "XMLHttpRequest";
+        ViewData["CurrentGroup"] = group ?? Guid.Empty;
         
-        if (isAjax)
-            return PartialView("_ListPartial", ListViewModel<Car>.GetModel(carFiltered, pageNo, _pageSize));
-        return View(ListViewModel<Car>.GetModel(carFiltered, pageNo, _pageSize));
+        if (Request.IsAjax())
+            return PartialView("_ListPartial", ListViewModel<Car>.GetModel(carFiltered, page, _pageSize));
+        return View(ListViewModel<Car>.GetModel(carFiltered, page, _pageSize));
     }
 }
