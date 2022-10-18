@@ -2,8 +2,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebLabsAsp.Controllers;
+namespace WebLabsAsp.Areas.Admin.Controllers;
 
+[Area("Admin")]
 public class RoleController : Controller
 {
     RoleManager<IdentityRole> roleManager;

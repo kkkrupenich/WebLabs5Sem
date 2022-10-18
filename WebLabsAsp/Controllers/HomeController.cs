@@ -22,6 +22,9 @@ public class HomeController : Controller
             new ListDemo{ ListItemValue=3, ListItemText="Item 3"}
         };
     }
+    
+    [Route("")]
+    [Route("Shop")]
     public IActionResult Index()
     {
         ViewData["Text"] = "Lab02";

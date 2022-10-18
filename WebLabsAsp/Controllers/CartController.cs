@@ -17,6 +17,7 @@ public class CartController : Controller
     }
     
     // GET
+    [Route("Cart")]
     public IActionResult Index()
     {
         return View(_cart.Items.Values);

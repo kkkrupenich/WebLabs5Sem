@@ -21,7 +21,7 @@ public class ProductController : Controller
 
     // GET
     [Route("Catalog")]
-    [Route("Catalog/Page_{page:int=1}")]
+    [Route("Catalog/Page_{page=1}")]
     public IActionResult Index(Guid? group, int page)
     {
         var carFiltered = _context.Cars

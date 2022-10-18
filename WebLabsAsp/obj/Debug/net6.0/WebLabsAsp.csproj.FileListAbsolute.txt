@@ -52,9 +52,7 @@ D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp\obj\Debug\net6.0\WebLabsAsp.RazorAssembly
 D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp\obj\Debug\net6.0\WebLabsAsp.RazorAssemblyInfo.cs
 D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp\obj\Debug\net6.0\staticwebassets.build.json
 D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp\obj\Debug\net6.0\staticwebassets.development.json
-D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp\obj\Debug\net6.0\scopedcss\bundle\WebLabsAsp.styles.css
-D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp\obj\Debug\net6.0\scopedcss\projectbundle\WebLabsAsp.bundle.scp.css
 D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp\obj\Debug\net6.0\WebLabsAsp.csproj.CopyComplete
 D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp\obj\Debug\net6.0\WebLabsAsp.dll
 D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp\obj\Debug\net6.0\refint\WebLabsAsp.dll

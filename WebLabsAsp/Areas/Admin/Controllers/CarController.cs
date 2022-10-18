@@ -10,8 +10,9 @@ using Microsoft.EntityFrameworkCore;
 using WebLabsAsp.Data;
 using WebLabsAsp.Entities;
 
-namespace WebLabsAsp.Controllers
+namespace WebLabsAsp.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CarController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -25,9 +26,11 @@ namespace WebLabsAsp.Controllers
             _context = context;
             _hostEnvironment = hostEnvironment;
             _logger = logger;
+            
         }
         
-        [BindProperty] public InputModel Input { get; set; }
+        [BindProperty] 
+        public InputModel Input { get; set; }
 
         // GET: Car
         public async Task<IActionResult> Index()
@@ -103,6 +106,7 @@ namespace WebLabsAsp.Controllers
             {
                 return NotFound();
             }
+            ViewData["groups"] = new SelectList(_context.CarGroups.ToList(), "CarGroupId","GroupName");
             return View(car);
         }
 
@@ -118,27 +122,27 @@ namespace WebLabsAsp.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (ModelState.GetFieldValidationState("Brand") != ModelValidationState.Valid ||
+                ModelState.GetFieldValidationState("Description") != ModelValidationState.Valid ||
+                ModelState.GetFieldValidationState("Price") != ModelValidationState.Valid ||
+                ModelState.GetFieldValidationState("Image") != ModelValidationState.Valid) return View(car);
+            try
             {
-                try
-                {
-                    _context.Update(car);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!CarExists(car.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                _context.Update(car);
+                await _context.SaveChangesAsync();
             }
-            return View(car);
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!CarExists(car.Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Car/Delete/5

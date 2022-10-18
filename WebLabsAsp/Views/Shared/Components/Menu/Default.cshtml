@@ -3,13 +3,13 @@
     {
         @if (item.IsPage)
         {
-            <a class="but" asp-area="@item.Area" asp-page="@item.Page">
+            <a class=@item.Active asp-area="@item.Area" asp-page="@item.Page">
                 @item.Text
             </a>
         }
         else
         {
-            <a class="but" asp-controller="@item.Controller" asp-action="@item.Action">
+            <a class=@item.Active asp-controller="@item.Controller" asp-action="@item.Action">
                 @item.Text
             </a>
         }

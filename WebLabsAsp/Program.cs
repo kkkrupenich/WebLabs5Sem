@@ -37,6 +37,12 @@ builder.Services.ConfigureApplicationCookie(options =>
 
 builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(opt =>
+{
+    opt.Cookie.HttpOnly = true;
+    opt.Cookie.IsEssential = true;
+});
 
 builder.Services.AddRazorPages();
 
@@ -62,10 +68,20 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-app.MapRazorPages();
+app.UseSession();
+
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "areas",
+        pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    );
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+    endpoints.MapRazorPages();
+});
 
 app.Services.CreateScope().ServiceProvider.GetRequiredService<IDbInitializer>().Initialize();
 

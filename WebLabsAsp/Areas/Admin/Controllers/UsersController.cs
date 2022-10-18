@@ -8,8 +8,9 @@ using Microsoft.EntityFrameworkCore;
 using WebLabsAsp.Data;
 using WebLabsAsp.Entities;
 
-namespace WebLabsAsp.Controllers
+namespace WebLabsAsp.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class UsersController : Controller
     {
         private readonly ApplicationDbContext _context;

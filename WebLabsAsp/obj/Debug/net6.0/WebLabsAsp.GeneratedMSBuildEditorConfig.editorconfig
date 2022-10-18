@@ -15,6 +15,122 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Views/CarGroup/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2FyR3JvdXBcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Views/CarGroup/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2FyR3JvdXBcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Views/CarGroup/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2FyR3JvdXBcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Views/CarGroup/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2FyR3JvdXBcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Views/Car/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2FyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Views/Car/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2FyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Views/Car/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2FyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Views/Car/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2FyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Views/Car/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2FyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Views/Role/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Views/Role/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -47,44 +163,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/CarGroup/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyR3JvdXBcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/CarGroup/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyR3JvdXBcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/CarGroup/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyR3JvdXBcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/CarGroup/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyR3JvdXBcSW5kZXguY3NodG1s
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Car/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Car/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Car/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Car/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEVkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Car/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Home/Index.cshtml]
@@ -103,14 +187,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxfTGlzdFBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Role/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Role/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Shared/Components/Cart/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FydFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -121,6 +197,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Shared/_LoginPartial.cshtml]
@@ -135,26 +215,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Users/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Users/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Users/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Users/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Users/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -162,7 +222,3 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
-
-[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-bz8ht5l3px

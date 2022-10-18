@@ -8,4 +8,5 @@ public class MenuItem
     public string Action { get; set; }
     public string Page { get; set; }
     public string Area { get; set; }
+    public string Active { get; set; }
 }

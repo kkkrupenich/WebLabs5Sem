@@ -38,4 +38,44 @@
       </Compile>
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Areas\Admin\Pages\_ViewImports.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Pages\_ViewStart.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CarGroup\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CarGroup\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CarGroup\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CarGroup\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Role\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Role\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Car\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Car\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Car\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Car\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Car\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Users\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Users\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Users\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Users\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Users\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Areas\Admin\Views\CarGroup\Create.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\CarGroup\Delete.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\CarGroup\Edit.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\CarGroup\Index.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Car\Create.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Car\Delete.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Car\Details.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Car\Edit.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Car\Index.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Role\Create.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Role\Index.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Users\Create.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Users\Delete.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Users\Details.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Users\Edit.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Users\Index.cshtml" />
+    </ItemGroup>
+
 </Project>
