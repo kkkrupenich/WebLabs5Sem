@@ -165,31 +165,5 @@ namespace WebLabsAsp.Areas.Admin.Controllers
         {
             return _context.Users.Any(e => e.Id == id);
         }
-
-        public FileResult GetAvatarFromBytes(byte[] bytesAvatar)
-        {
-            return File(bytesAvatar, "image/*");
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> GetAvatar()
-        {
-            var user = await _userManager.GetUserAsync(User);
-            if (user == null)
-            {
-                return null;
-            }
-
-            if (user.Avatar == null) return NotFound();
-            FileResult imageUserFile = GetAvatarFromBytes(user.Avatar);
-            return imageUserFile;
-        }
-        [HttpGet]
-        public IActionResult GetAvatars(byte[] bytes)
-        {
-            if (bytes == null) return NotFound();
-            FileResult imageUserFile = GetAvatarFromBytes(bytes);
-            return imageUserFile;
-        }
     }
 }

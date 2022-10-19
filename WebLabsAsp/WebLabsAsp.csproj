@@ -26,16 +26,12 @@
           <PrivateAssets>all</PrivateAssets>
         </PackageReference>
         <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+        <PackageReference Include="Serilog.Extensions.Logging.File" Version="3.0.1-dev-00077" />
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Logs" />
       <Folder Include="Pages" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Compile Update="Migrations\20221002191619_Cars.Designer.cs">
-        <DependentUpon>20221002191619_Cars.cs</DependentUpon>
-      </Compile>
     </ItemGroup>
 
     <ItemGroup>
@@ -57,6 +53,49 @@
       <_ContentIncludedByDefault Remove="Views\Users\Details.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Users\Edit.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Users\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\css\all.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\css\all.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\css\brands.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\css\brands.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\css\fontawesome.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\css\fontawesome.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\css\regular.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\css\regular.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\css\solid.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\css\solid.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\css\svg-with-js.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\css\svg-with-js.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\css\v4-font-face.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\css\v4-font-face.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\css\v4-shims.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\css\v4-shims.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\css\v5-font-face.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\css\v5-font-face.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\js\all.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\js\all.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\js\brands.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\js\brands.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\js\conflict-detection.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\js\conflict-detection.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\js\fontawesome.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\js\fontawesome.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\js\regular.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\js\regular.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\js\solid.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\js\solid.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\js\v4-shims.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\js\v4-shims.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\sprites\brands.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\sprites\regular.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\sprites\solid.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\webfonts\fa-brands-400.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\webfonts\fa-brands-400.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\webfonts\fa-regular-400.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\webfonts\fa-regular-400.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\webfonts\fa-solid-900.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\webfonts\fa-solid-900.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\webfonts\fa-v4compatibility.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\font-awesome\webfonts\fa-v4compatibility.woff2" />
     </ItemGroup>
 
     <ItemGroup>

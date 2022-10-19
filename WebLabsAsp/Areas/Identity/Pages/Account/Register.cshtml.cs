@@ -150,8 +150,8 @@ namespace WebLabsAsp.Areas.Identity.Pages.Account
 
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User created a new account with password.");
-
+                    _logger.LogInformation("{0} - user creater a new account.", 
+                        DateTime.Now.ToString("d") + " " + DateTime.Now.ToString("T"));
                     await _userManager.AddToRoleAsync(user, role.Name);
 
                     var userId = await _userManager.GetUserIdAsync(user);

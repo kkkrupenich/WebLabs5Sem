@@ -3,6 +3,10 @@ using Microsoft.EntityFrameworkCore;
 using WebLabsAsp.Data;
 using WebLabsAsp.Entities;
 using WebLabsAsp.Models;
+using WebLabsAsp.Services;
+using WebLabsAsp.Entities;
+using WebLabsAsp.Extensions;
+using WebLabsAsp.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +14,16 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(connectionString));
+
+builder.Host.ConfigureLogging(log =>
+{
+    var logPath = $"Logs/Log-[{DateTime.Today:dd.MM.yyyy}].txt";
+    log.ClearProviders();
+
+    log.AddProvider(new FileLoggerProvider(logPath));
+    log.AddFilter("Microsoft", LogLevel.None);
+    log.AddFilter("System", LogLevel.None);
+});
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
@@ -44,6 +58,9 @@ builder.Services.AddSession(opt =>
     opt.Cookie.IsEssential = true;
 });
 
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddScoped<Cart>(sp => CartService.GetCart(sp));
+
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
@@ -69,7 +86,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseSession();
-
+app.UseLogging();
 
 app.UseEndpoints(endpoints =>
 {
@@ -84,6 +101,5 @@ app.UseEndpoints(endpoints =>
 });
 
 app.Services.CreateScope().ServiceProvider.GetRequiredService<IDbInitializer>().Initialize();
-
 
 app.Run();

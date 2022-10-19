@@ -5,6 +5,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -160,7 +161,8 @@ namespace WebLabsAsp.Areas.Identity.Pages.Account
 
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User logged in.");
+                    _logger.LogInformation("{0} - user logged in.", 
+                        DateTime.Now.ToString("d") + " " + DateTime.Now.ToString("T"));
                     return LocalRedirect(returnUrl);
                 }
 

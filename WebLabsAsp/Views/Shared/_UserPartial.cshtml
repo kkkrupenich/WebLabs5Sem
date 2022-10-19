@@ -1,9 +1,9 @@
 ﻿@using Microsoft.AspNetCore.Identity.EntityFrameworkCore
-<div class="row" style="width: 200px">
+<div class="row" style="width: 250px">
     @await Component.InvokeAsync("Cart")
     <div class="dropdown">
         <div class="dropbtn">
-            <img img-controller="Users"
+            <img img-controller="Home"
                  img-action="GetAvatar"
                  onerror="this.onerror=null; this.src='@Url.Content("~/images/avatar.jpg")'" 
                  width="40" height="40" alt="@User.Identity.Name" class="rounded"/>

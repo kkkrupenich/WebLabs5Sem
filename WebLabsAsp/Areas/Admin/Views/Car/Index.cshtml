@@ -11,6 +11,7 @@
     <p>
         <a asp-action="Create">Create New</a>
     </p>
+    
     <table class="table">
         <thead>
         <tr>
@@ -37,7 +38,8 @@
         {
             <tr>
                 <td>
-                    <img src="~/cars/@item.Image" alt="NoImage" width="50"/>
+                    <img src="@Url.Content("~/cars/" + item.Image)" alt="Car_Image"
+                         onerror="this.onerror=null; this.src='@Url.Content("~/cars/noCarImage.png")'" width="50" class="rounded"/>
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Brand)
@@ -53,7 +55,6 @@
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                     <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                 </td>
             </tr>

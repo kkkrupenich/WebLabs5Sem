@@ -15,13 +15,10 @@ public class Car
     [Required(ErrorMessage = "{0} is required")]
     public int Price { get; set; }
     public string? Image { get; set; }
-    
-    //public string Group { get; set; }
-    
     public Guid CarGroupId { get; set; }
     
     [Display(Name="Category")]
-    public CarGroup CarGroup { get; set; }
+    public CarGroup? CarGroup { get; set; }
 }
 
 public class CarGroup

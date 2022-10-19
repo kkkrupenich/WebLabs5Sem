@@ -1,27 +1,43 @@
 ﻿@model IEnumerable<WebLabsAsp.Models.CartItem>
-    
+
 @{
     ViewData["Title"] = "Cart";
 }
 
 <div class="scaffold">
-    <h1>Ваша корзина</h1>
-    
-    <table class="table">
+    <h1>Your cart</h1>
+
+    <table class="table table-bordered table-striped" style="text-align: center">
         <thead>
-            <tr>
-                <th>
-                   
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Quantity)
-                </th>
-                <th></th>
-            </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Car.Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Car.Brand)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Car.Price)
+            </th>
+            <th>
+                <a class="btn btn-outline-danger"
+                   asp-action="ClearAll" asp-controller="Cart">
+                    Clear all
+                </a>
+            </th>
+        </tr>
         </thead>
         <tbody>
-    @foreach (var item in Model) {
+        @foreach (var item in Model)
+        {
             <tr>
+                <td>
+                    <img src="@Url.Content("~/cars/" + item.Car.Image)" alt="Car_Image"
+                         onerror="this.onerror=null; this.src='@Url.Content("~/cars/noCarImage.png")'" width="50" class="rounded"/>
+                </td>
                 <td>
                     <label>@item.Car.Brand</label>
                 </td>
@@ -29,13 +45,38 @@
                     @Html.DisplayFor(modelItem => item.Quantity)
                 </td>
                 <td>
-                    <a class="btn btn-outline-danger"
-                       asp-action="delete" asp-controller="Cart"
+                    @{
+                        var price = item.Quantity * item.Car.Price;
+                    }
+                    @Html.DisplayFor(modelItem => price)
+                </td>
+                <td>
+                    @{
+                        var request = ViewContext.HttpContext.Request;
+                        var returnUrl = request.Path + request.QueryString.ToUriComponent();
+                    }
+
+                    <a class="btn btn-outline-success"
+                       asp-action="Add" asp-controller="Cart"
                        asp-route-id="@item.Car.Id"
-                       ><i class="fa fa-close"></i></a>
+                       asp-route-returnUrl="@returnUrl">
+                        +
+                    </a>
+                    <a class="btn btn-outline-danger"
+                       asp-action="RemoveOne" asp-controller="Cart"
+                       asp-route-id="@item.Car.Id"
+                       asp-route-returnUrl="@returnUrl">
+                        -
+                    </a>
+                    |
+                    <a class="btn btn-outline-warning"
+                       asp-action="Delete" asp-controller="Cart"
+                       asp-route-id="@item.Car.Id">
+                        ×
+                    </a>
                 </td>
             </tr>
-    }
+        }
         </tbody>
     </table>
 </div>

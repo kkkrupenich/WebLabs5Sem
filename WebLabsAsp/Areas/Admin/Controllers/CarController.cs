@@ -19,22 +19,21 @@ namespace WebLabsAsp.Areas.Admin.Controllers
         private readonly IWebHostEnvironment _hostEnvironment;
         private readonly ILogger<Car> _logger;
 
-        public CarController(ApplicationDbContext context, 
+        public CarController(ApplicationDbContext context,
             IWebHostEnvironment hostEnvironment,
             ILogger<Car> logger)
         {
             _context = context;
             _hostEnvironment = hostEnvironment;
             _logger = logger;
-            
         }
-        
-        [BindProperty] 
-        public InputModel Input { get; set; }
+
+        [BindProperty] public InputModel Input { get; set; }
 
         // GET: Car
         public async Task<IActionResult> Index()
         {
+            ViewData["groups"] = new SelectList(_context.CarGroups.ToList(), "CarGroupId", "GroupName");
             return View(await _context.Cars.ToListAsync());
         }
 
@@ -59,7 +58,7 @@ namespace WebLabsAsp.Areas.Admin.Controllers
         // GET: Car/Create
         public IActionResult Create()
         {
-            ViewData["groups"] = new SelectList(_context.CarGroups.ToList(), "CarGroupId","GroupName");
+            ViewData["groups"] = new SelectList(_context.CarGroups.ToList(), "CarGroupId", "GroupName");
             return View();
         }
 
@@ -74,22 +73,26 @@ namespace WebLabsAsp.Areas.Admin.Controllers
         {
             if (ModelState.GetFieldValidationState("Brand") != ModelValidationState.Valid ||
                 ModelState.GetFieldValidationState("Description") != ModelValidationState.Valid ||
-                ModelState.GetFieldValidationState("Price") != ModelValidationState.Valid) 
+                ModelState.GetFieldValidationState("Price") != ModelValidationState.Valid ||
+                ModelState.GetFieldValidationState("CarGroupId") != ModelValidationState.Valid)
                 return View(car);
-            
-            if (Input.ImageUpload != null)
-            {
-                await using (var stream = new FileStream(Path.Combine(_hostEnvironment.WebRootPath, "cars",
-                                 Input.ImageUpload.FormFile.FileName), FileMode.Create))
-                {
-                    await Input.ImageUpload.FormFile.CopyToAsync(stream);
-                }
 
-                car.Image = Input.ImageUpload.FormFile.FileName;
-            }
-            
             _context.Add(car);
             await _context.SaveChangesAsync();
+
+            if (Input.ImageUpload == null) return RedirectToAction(nameof(Index));
+
+
+            var image = car.Id + Path.GetExtension(Input.ImageUpload.FormFile.FileName);
+            await using (var stream = new FileStream(Path.Combine(_hostEnvironment.WebRootPath, "cars",
+                             image), FileMode.Create))
+            {
+                await Input.ImageUpload.FormFile.CopyToAsync(stream);
+            }
+
+            car.Image = image;
+            await _context.SaveChangesAsync();
+
             return RedirectToAction(nameof(Index));
         }
 
@@ -106,7 +109,8 @@ namespace WebLabsAsp.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            ViewData["groups"] = new SelectList(_context.CarGroups.ToList(), "CarGroupId","GroupName");
+
+            ViewData["groups"] = new SelectList(_context.CarGroups.ToList(), "CarGroupId", "GroupName");
             return View(car);
         }
 
@@ -125,9 +129,32 @@ namespace WebLabsAsp.Areas.Admin.Controllers
             if (ModelState.GetFieldValidationState("Brand") != ModelValidationState.Valid ||
                 ModelState.GetFieldValidationState("Description") != ModelValidationState.Valid ||
                 ModelState.GetFieldValidationState("Price") != ModelValidationState.Valid ||
-                ModelState.GetFieldValidationState("Image") != ModelValidationState.Valid) return View(car);
+                ModelState.GetFieldValidationState("CarGroupId") != ModelValidationState.Valid)
+                return View(car);
+            
             try
             {
+                if (Input.ImageUpload != null)
+                {
+                    var fileName = car.Id.ToString() + '.'
+                                                             + Input.ImageUpload.FormFile.FileName.Split('.')[1];
+                    using (var stream = new FileStream(Path.Combine(_hostEnvironment.WebRootPath,
+                               "cars", fileName), FileMode.Create))
+                    {
+                        await Input.ImageUpload.FormFile.CopyToAsync(stream);
+                    }
+
+                    car.Image = fileName;
+                }
+                else
+                {
+                    var fileName = car.Id.ToString();
+                    var carImage = new DirectoryInfo(Path.Combine(_hostEnvironment.WebRootPath,
+                        "cars")).GetFiles(fileName + "*.*");
+
+                    car.Image = carImage.Length > 0 ? carImage[0].Name : "";
+                }
+    
                 _context.Update(car);
                 await _context.SaveChangesAsync();
             }
@@ -142,6 +169,7 @@ namespace WebLabsAsp.Areas.Admin.Controllers
                     throw;
                 }
             }
+
             return RedirectToAction(nameof(Index));
         }
 
@@ -172,19 +200,27 @@ namespace WebLabsAsp.Areas.Admin.Controllers
             {
                 return Problem("Entity set 'ApplicationDbContext.Cars'  is null.");
             }
+
             var car = await _context.Cars.FindAsync(id);
             if (car != null)
             {
                 _context.Cars.Remove(car);
             }
-            
+
             await _context.SaveChangesAsync();
+
+            var fileInfo = _hostEnvironment.WebRootFileProvider.GetFileInfo("/cars/" + car.Image);
+            if (!fileInfo.Exists) return RedirectToAction(nameof(Index));
+
+            var oldPath = Path.Combine(_hostEnvironment.WebRootPath, "cars", car.Image);
+            System.IO.File.Delete(oldPath);
+
             return RedirectToAction(nameof(Index));
         }
 
         private bool CarExists(Guid id)
         {
-          return _context.Cars.Any(e => e.Id == id);
+            return _context.Cars.Any(e => e.Id == id);
         }
 
         public class InputModel

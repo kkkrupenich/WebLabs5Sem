@@ -7,13 +7,13 @@ public class CartViewComponent : ViewComponent
 {
     private Cart _cart;
     
-    // public CartViewComponent(Cart cart)
-    // {
-    //     _cart = cart;
-    // }
+    public CartViewComponent(Cart cart)
+    {
+        _cart = cart;
+    }
     
     public async Task<IViewComponentResult> InvokeAsync()
     {
-        return View();
+        return View(_cart);
     }
 }
