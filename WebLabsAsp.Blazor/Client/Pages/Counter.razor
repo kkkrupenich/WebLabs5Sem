@@ -1,0 +1,37 @@
+﻿@page "/counter"
+@using WebLabsAsp.Blazor.Client.Models
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @_currentCount</p>
+
+<EditForm Model="@_counter" OnValidSubmit="@HandleValidSubmit">
+    <div>
+        <DataAnnotationsValidator/>
+        <ValidationSummary/>
+        <InputNumber @bind-Value="_counter.customCount"/>
+    </div>
+    <br/>
+    <div>
+        <button type="submit" class="btn btn-outline-secondary">Set</button>
+    </div>
+</EditForm>
+<br/>
+<button class="btn btn-outline-secondary" @onclick="IncrementCount">Increment</button>
+
+@code {
+    private readonly CounterModel _counter = new();
+    private int _currentCount = 0;
+
+    private void HandleValidSubmit()
+    {
+        _currentCount = _counter.customCount;
+    }
+    
+    private void IncrementCount()
+    {
+        _currentCount++;
+    }
+}

@@ -1,0 +1,12 @@
+D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Shared\bin\Debug\net6.0\WebLabsAsp.Blazor.Shared.deps.json
+D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Shared\bin\Debug\net6.0\WebLabsAsp.Blazor.Shared.dll
+D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Shared\bin\Debug\net6.0\WebLabsAsp.Blazor.Shared.pdb
+D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Shared\obj\Debug\net6.0\WebLabsAsp.Blazor.Shared.csproj.AssemblyReference.cache
+D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Shared\obj\Debug\net6.0\WebLabsAsp.Blazor.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Shared\obj\Debug\net6.0\WebLabsAsp.Blazor.Shared.AssemblyInfoInputs.cache
+D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Shared\obj\Debug\net6.0\WebLabsAsp.Blazor.Shared.AssemblyInfo.cs
+D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Shared\obj\Debug\net6.0\WebLabsAsp.Blazor.Shared.csproj.CoreCompileInputs.cache
+D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Shared\obj\Debug\net6.0\WebLabsAsp.Blazor.Shared.dll
+D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Shared\obj\Debug\net6.0\refint\WebLabsAsp.Blazor.Shared.dll
+D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Shared\obj\Debug\net6.0\WebLabsAsp.Blazor.Shared.pdb
+D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Shared\obj\Debug\net6.0\ref\WebLabsAsp.Blazor.Shared.dll
