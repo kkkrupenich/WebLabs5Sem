@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\WebLabsAsp\WebLabsAsp.csproj" />
     <ProjectReference Include="..\Client\WebLabsAsp.Blazor.Client.csproj" />
     <ProjectReference Include="..\Shared\WebLabsAsp.Blazor.Shared.csproj" />
   </ItemGroup>

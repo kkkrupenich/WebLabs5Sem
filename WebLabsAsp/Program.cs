@@ -4,9 +4,7 @@ using WebLabsAsp.Data;
 using WebLabsAsp.Entities;
 using WebLabsAsp.Models;
 using WebLabsAsp.Services;
-using WebLabsAsp.Entities;
 using WebLabsAsp.Extensions;
-using WebLabsAsp.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 

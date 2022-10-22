@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8a3a73a5-75e6-4596-9887-bc4fb047f667" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Client/bin/Debug/net6.0/dotnet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/bin/Debug/net6.0/dotnet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/obj/Debug/net6.0/WebLabsAsp.Blazor.Client.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/obj/Debug/net6.0/WebLabsAsp.Blazor.Client.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/obj/WebLabsAsp.Blazor.Client.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/obj/WebLabsAsp.Blazor.Client.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/WebLabsAsp.Blazor.Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/WebLabsAsp.Blazor.Server.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/bin/Debug/net6.0/WebLabsAsp.Blazor.Server.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/bin/Debug/net6.0/WebLabsAsp.Blazor.Server.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/bin/Debug/net6.0/WebLabsAsp.Blazor.Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/bin/Debug/net6.0/WebLabsAsp.Blazor.Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/bin/Debug/net6.0/WebLabsAsp.Blazor.Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/bin/Debug/net6.0/WebLabsAsp.Blazor.Server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/bin/Debug/net6.0/WebLabsAsp.Blazor.Server.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/bin/Debug/net6.0/WebLabsAsp.Blazor.Server.runtimeconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/bin/Debug/net6.0/WebLabsAsp.Blazor.Server.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/bin/Debug/net6.0/WebLabsAsp.Blazor.Server.staticwebassets.runtime.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/WebLabsAsp.Blazor.Server.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/WebLabsAsp.Blazor.Server.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/WebLabsAsp.Blazor.Server.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/WebLabsAsp.Blazor.Server.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/WebLabsAsp.Blazor.Server.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/WebLabsAsp.Blazor.Server.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/WebLabsAsp.Blazor.Server.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/WebLabsAsp.Blazor.Server.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/WebLabsAsp.Blazor.Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/WebLabsAsp.Blazor.Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/WebLabsAsp.Blazor.Server.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/WebLabsAsp.Blazor.Server.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/WebLabsAsp.Blazor.Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/WebLabsAsp.Blazor.Server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/ref/WebLabsAsp.Blazor.Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/ref/WebLabsAsp.Blazor.Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/refint/WebLabsAsp.Blazor.Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/refint/WebLabsAsp.Blazor.Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/Debug/net6.0/staticwebassets.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/WebLabsAsp.Blazor.Server.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/WebLabsAsp.Blazor.Server.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/WebLabsAsp.Blazor.Server.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/WebLabsAsp.Blazor.Server.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/WebLabsAsp.Blazor.Server.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/WebLabsAsp.Blazor.Server.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/WebLabsAsp.Blazor.Shared.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/WebLabsAsp.Blazor.Shared.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/WebLabsAsp.Blazor.Shared.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/WebLabsAsp.Blazor.Shared.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebLabsAsp/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebLabsAsp/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebLabsAsp/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebLabsAsp/obj/staticwebassets.pack.sentinel" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2GUnq9w4aSgotC0XgF54D33tc23" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a3a73a5-75e6-4596-9887-bc4fb047f667" name="Changes" comment="" />
+      <created>1666452218090</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666452218090</updated>
+      <workItem from="1666452224884" duration="599000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

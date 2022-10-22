@@ -197,14 +197,14 @@
       "netstandard.dll": "sha256-+SGdnDhVMiZ9hq0EsYwJ+mcK0odf3bAtXnSKLorGDCs=",
       "System.Private.CoreLib.dll": "sha256-mqfalNg3wC8XHlyA+j5ioNcnc0kt4prNudKdyJoaYaU=",
       "WebLabsAsp.Blazor.Shared.dll": "sha256-9FvnuHtqOTLuDfbNPIq+pjbaUdjBHTmCao8auTnQt18=",
-      "WebLabsAsp.Blazor.Client.dll": "sha256-eH4++JlEy7L5CaRJ+2mtfbtTt77jtjqZ2OkyvBVukWg="
+      "WebLabsAsp.Blazor.Client.dll": "sha256-egSjJnNq2IT\/G4FNUcaqFSSyouvTmzmksAUc89wQ\/NQ="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "WebLabsAsp.Blazor.Shared.pdb": "sha256-Nx3ItZF84FmYANqPqDyqLpuIZRDPp\/p3HICEVAQXs60=",
-      "WebLabsAsp.Blazor.Client.pdb": "sha256-6HmklwlysIleOyBnWMhz0cvIKoKRwQRFBTZsJHtAb\/4="
+      "WebLabsAsp.Blazor.Client.pdb": "sha256-zKzgRKtXQOCfl\/9qOJpw+QCRrDL\/JSZZyuBT+Q8AHRo="
     },
     "runtime": {
       "dotnet.6.0.9.01xviypw9d.js": "sha256-Azk5sbYFVo84h8NpIst9roIPGLH2y8ewQ9SY\/sUHvgs=",
