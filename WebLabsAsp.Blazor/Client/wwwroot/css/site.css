@@ -1,0 +1,467 @@
+/*======= Google fonts =======*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*======= Main Css =======*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  color: white;
+}
+
+body{
+  background: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+/*======= Header navigation bar =======*/
+header{
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+}
+
+header .nav-bar{
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  height: 4em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 150px;
+  transition: 0.5s ease;
+}
+
+.nav-bar .logo{
+  color: #fff;
+  font-size: 1.8em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  pointer-events: none;
+  user-select: none;
+}
+
+.navigation .nav-items a{
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.navigation .nav-items a.active{
+  color: #55ACEE;
+  border-bottom: 3px solid #55ACEE;
+  width: 100%;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+
+.navigation .nav-items a:hover{
+  color: #55ACEE;
+  transition: 0.3s ease;
+}
+
+.navigation .nav-items a.active:hover{
+  color: #007bd7;
+  border-bottom: 3px solid #007bd7;
+  width: 100%;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+
+
+.nav-bar .cart {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-bar .cart:hover {
+  color: #55ACEE;
+  transition: 0.3s ease;
+}
+
+.nav-bar .cart.active{
+  color: #55ACEE;
+  border-bottom: 3px solid #55ACEE;
+  width: 100%;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+
+.nav-bar .cart.active:hover{
+  color: #007bd7;
+  border-bottom: 3px solid #007bd7;
+  width: 100%;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+
+.navigation .nav-items a:not(:last-child){
+  margin-right: 50px;
+}
+
+section{
+  position: relative;
+  font-size: 1em;
+  padding: 70px 150px;
+}
+
+.home{
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home h1{
+  background: #ccc;
+  font-size: 6em;
+  font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content h1{
+  color: #fff;
+  font-size: 3.5em;
+  font-weight: 600;
+}
+
+.content h2{
+  color: #fff;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.content p{
+  color: #fff;
+  font-size: 1em;
+  margin: 30px 0;
+}
+
+::-webkit-scrollbar{
+  background: #fff;
+  width: 11px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgb(70,70,70);
+  width: 100%;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: rgb(85,85,85);
+}
+
+.scroll-indicator-container{
+  width: 100%;
+  height: 5px;
+}
+
+.scroll-indicator-bar{
+  background: #199fff;
+  width: 0%;
+  height: 100%;
+  box-shadow: 0 5px 25px #199fff,
+  0 5px 50px #199fff;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+}
+
+.dropdown-2 {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  position: absolute;
+  background-color: rgba(25,25,25, 0.9);
+  width: 200px;
+  max-width: 200px;
+  left: -80px;
+  z-index: 1;
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  transition-property: transform, opacity;
+}
+
+.dropdown-content-2 {
+  position: absolute;
+  background-color: rgba(25,25,25, 0.9);
+  width: 250px;
+  max-width: 250px;
+  top: 38px;
+  left: -80px;
+  z-index: 1;
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  transition-property: transform, opacity;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  pointer-events: all;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.dropdown-2:hover .dropdown-content-2 {
+  pointer-events: all;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-2 a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgba(50,50,50, 0.9);
+}
+
+.dropdown-content-2 a:hover {
+  color: #fff;
+  background-color: rgba(50,50,50, 0.9);
+}
+
+.list {
+  margin-left: 50px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer-menu li:hover a{
+  color: #55ACEE;
+  text-decoration: none;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+  text-decoration: none;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(44px, 9999px, 5px, 0);
+  }
+  5% {
+    clip: rect(36px, 9999px, 84px, 0);
+  }
+  10% {
+    clip: rect(75px, 9999px, 84px, 0);
+  }
+  15% {
+    clip: rect(16px, 9999px, 52px, 0);
+  }
+  20% {
+    clip: rect(39px, 9999px, 2px, 0);
+  }
+  25% {
+    clip: rect(87px, 9999px, 51px, 0);
+  }
+  30% {
+    clip: rect(60px, 9999px, 31px, 0);
+  }
+  35% {
+    clip: rect(91px, 9999px, 54px, 0);
+  }
+  40% {
+    clip: rect(71px, 9999px, 28px, 0);
+  }
+  45% {
+    clip: rect(77px, 9999px, 48px, 0);
+  }
+  50% {
+    clip: rect(35px, 9999px, 43px, 0);
+  }
+  55% {
+    clip: rect(43px, 9999px, 93px, 0);
+  }
+  60% {
+    clip: rect(19px, 9999px, 44px, 0);
+  }
+  65% {
+    clip: rect(6px, 9999px, 88px, 0);
+  }
+  70% {
+    clip: rect(75px, 9999px, 16px, 0);
+  }
+  75% {
+    clip: rect(56px, 9999px, 29px, 0);
+  }
+  80% {
+    clip: rect(11px, 9999px, 43px, 0);
+  }
+  85% {
+    clip: rect(66px, 9999px, 85px, 0);
+  }
+  90% {
+    clip: rect(82px, 9999px, 53px, 0);
+  }
+  95% {
+    clip: rect(39px, 9999px, 68px, 0);
+  }
+  100% {
+    clip: rect(87px, 9999px, 65px, 0);
+  }
+}
+
+.nav-bar .logo:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 #55ACEE;
+  top: 0;
+  color: white;
+  background: transparent;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(74px, 9999px, 38px, 0);
+  }
+  5% {
+    clip: rect(30px, 9999px, 41px, 0);
+  }
+  10% {
+    clip: rect(20px, 9999px, 43px, 0);
+  }
+  15% {
+    clip: rect(67px, 9999px, 98px, 0);
+  }
+  20% {
+    clip: rect(51px, 9999px, 71px, 0);
+  }
+  25% {
+    clip: rect(45px, 9999px, 36px, 0);
+  }
+  30% {
+    clip: rect(8px, 9999px, 12px, 0);
+  }
+  35% {
+    clip: rect(41px, 9999px, 87px, 0);
+  }
+  40% {
+    clip: rect(68px, 9999px, 81px, 0);
+  }
+  45% {
+    clip: rect(47px, 9999px, 32px, 0);
+  }
+  50% {
+    clip: rect(80px, 9999px, 3px, 0);
+  }
+  55% {
+    clip: rect(80px, 9999px, 23px, 0);
+  }
+  60% {
+    clip: rect(94px, 9999px, 91px, 0);
+  }
+  65% {
+    clip: rect(72px, 9999px, 9px, 0);
+  }
+  70% {
+    clip: rect(38px, 9999px, 21px, 0);
+  }
+  75% {
+    clip: rect(94px, 9999px, 55px, 0);
+  }
+  80% {
+    clip: rect(44px, 9999px, 26px, 0);
+  }
+  85% {
+    clip: rect(21px, 9999px, 7px, 0);
+  }
+  90% {
+    clip: rect(48px, 9999px, 20px, 0);
+  }
+  95% {
+    clip: rect(57px, 9999px, 16px, 0);
+  }
+  100% {
+    clip: rect(53px, 9999px, 62px, 0);
+  }
+}
+
+.nav-bar .logo:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 red;
+  top: 0;
+  color: white;
+  background: transparent;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+ 
+.scaffold {
+  padding: 100px;
+}
+
+.scaffold > div .form-floating{
+  margin: 10px 0;
+}

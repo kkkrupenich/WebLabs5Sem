@@ -1,6 +1,32 @@
-﻿@page "/api/cars"
+﻿@page "/api/cardemo"
+@using WebLabsAsp.Blazor.Shared
+@using System.Text.Json.Serialization
+@inject HttpClient HttpClient
+
 <h3>Cars list</h3>
 
+<div style="display: block; height: 15em; overflow-y: scroll;">
+    <CarListViewModel @bind-Cars="@cars" SelectionChanged="ShowDetails"/>
+</div>
+
+<div class="mt-3">
+    <CarDetailViewModel car="@selectedCar"/>
+</div>
+
 @code {
+    private Guid[] cars;
+    private Car selectedCar;
     
+    private int selectedItem;
+
+    protected override async Task OnInitializedAsync()
+    {
+        cars = await HttpClient.GetFromJsonAsync<Guid[]>("/api/cars");
+    }
+
+    private async void ShowDetails(int newSelection)
+    {
+        selectedItem = newSelection;
+        selectedCar = await HttpClient.GetFromJsonAsync<Car>($"/api/Cars/{cars[selectedItem]}");
+    }
 }

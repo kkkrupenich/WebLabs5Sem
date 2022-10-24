@@ -23,36 +23,15 @@ namespace WebLabsAsp.Blazor.Server.Controllers
 
         // GET: api/Cars
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Car>>> GetCars()
+        public async Task<List<Guid>> GetCars()
         {
             if (_context.Cars == null)
             {
-                return NotFound();
+                return null;
             }
-            
-            return await _context.Cars.ToListAsync();
+
+            return await _context.Cars.Select(w => w.Id).ToListAsync();
         }
-        // [HttpGet("{group?}")]
-        // public async Task<ActionResult<IEnumerable<Car>>> GetCars(string group)
-        // {
-        //     if (_context.Cars == null)
-        //     {
-        //         return NotFound();
-        //     }
-        //     
-        //     return await _context.Cars.ToListAsync();
-        //
-        //     
-        //     // if (String.IsNullOrEmpty(group))
-        //     // {
-        //     //     return await _context.Cars.ToListAsync();
-        //     // }
-        //     //
-        //     // var groupId = _context.CarGroups.FirstOrDefaultAsync(g => g.GroupName == group).Result.CarGroupId;
-        //     //
-        //     // return await _context.Cars.Where(car => car.CarGroupId == groupId).ToListAsync();
-        //
-        // }
 
         // GET: api/Cars/5
         [HttpGet("{id}")]

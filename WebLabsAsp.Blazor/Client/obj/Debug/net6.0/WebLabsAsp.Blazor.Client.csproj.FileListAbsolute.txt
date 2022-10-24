@@ -821,3 +821,7 @@ D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Client\obj\Debug\net6.0\WebLabsAsp
 D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Client\obj\Debug\net6.0\refint\WebLabsAsp.Blazor.Client.dll
 D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Client\obj\Debug\net6.0\WebLabsAsp.Blazor.Client.pdb
 D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Client\obj\Debug\net6.0\ref\WebLabsAsp.Blazor.Client.dll
+D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll
+D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Client\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
+D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Client\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\labs\sem5\igi\WebLabsAsp\WebLabsAsp.Blazor\Client\obj\Debug\net6.0\build-gz\HhZXyBEt.gz

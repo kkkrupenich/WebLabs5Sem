@@ -1,0 +1,38 @@
+﻿@using WebLabsAsp.Blazor.Shared
+@using System.Text.Json.Serialization
+
+@if (car is not null)
+{
+    <div class="row">
+        <div class="col-5">
+            <img src=@imageSrc alt="carImage" width="300" class="rounded"/>
+        </div>
+        <div class="col-5">
+            <div class="card-body">
+                <h5 class="card-title">
+                    @car.Brand
+                </h5>
+                <div class="dropdown-divider"></div>
+                <p class="card-text">
+                    @car.Description
+                </p>
+                <div class="dropdown-divider"></div>
+                <div class="card-subtitle badge">
+                    <h4>$@car.Price</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+
+    [Parameter]
+    public Car car { get; set; }
+
+    string imageSrc => car.Image == null ? "/images/avatar.jpg" : $"cars/{car.Image}";
+
+    [Parameter]
+    public EventCallback<Car> carChanged { get; set; }
+
+}

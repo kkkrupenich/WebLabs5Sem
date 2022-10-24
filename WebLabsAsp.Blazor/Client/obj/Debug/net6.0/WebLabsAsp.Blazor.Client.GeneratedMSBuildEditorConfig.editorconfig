@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp.Blazor/Client/Pages/CarsControl.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc0NvbnRyb2wucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp.Blazor/Client/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -32,6 +36,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp.Blazor/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp.Blazor/Client/Shared/CarDetailViewModel.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhckRldGFpbFZpZXdNb2RlbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp.Blazor/Client/Shared/CarListViewModel.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhckxpc3RWaWV3TW9kZWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/labs/sem5/igi/WebLabsAsp/WebLabsAsp.Blazor/Client/Shared/SurveyPrompt.razor]

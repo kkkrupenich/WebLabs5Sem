@@ -1,0 +1,38 @@
+﻿@using WebLabsAsp.Blazor.Shared
+@using System.Text.Json.Serialization
+
+@if (Cars is not null)
+{
+    <div class="list-group">
+        @for (var i = 0; i < Cars.Length; i++)
+        {
+            var copy = i;
+            var car = Cars[copy];
+
+            <button class="list-group-item list-group-item-action @(selection == copy ? "active" : null)"
+                    @onclick="() => ChangeSelection(copy)">
+                @(copy + 1). @car
+            </button>
+        }
+    </div>
+}
+
+@code{
+    private int selection;
+
+    [Parameter]
+    public Guid[] Cars { get; set; }
+    
+    [Parameter]
+    public EventCallback<Guid[]> CarsChanged { get; set; }
+
+    [Parameter]
+    public EventCallback<int> SelectionChanged { get; set; }
+
+    private async Task ChangeSelection(int newSelection)
+    {
+        selection = newSelection;
+        await SelectionChanged.InvokeAsync(selection);
+    }
+
+}
